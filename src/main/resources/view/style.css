@@ -1,0 +1,119 @@
+.root {
+    -fx-background-color: -colore-sfondo;
+    -fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+}
+
+.label {
+    -fx-text-fill: -colore-testo;
+}
+
+.button {
+    -fx-background-color: transparent;
+    -fx-text-fill: -colore-secondario;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-alignment: center-left;
+    -fx-padding: 10 15 10 15;
+    -fx-cursor: hand;
+}
+
+.button:hover {
+    -fx-text-fill: -colore-testo;
+}
+
+.button:hover .glyph-icon{
+    -fx-fill: -colore-primario;
+}
+
+.text-field {
+    -fx-background-color: -colore-pannelli;
+    -fx-text-fill:-colore-testo;
+    -fx-background-radius: 5;
+    -fx-padding: 5 15 5 15;
+    -fx-prompt-text-fill: -colore-secondario;
+}
+
+.glyph-icon {
+    -fx-fill: -colore-secondario;
+    -fx-cursor: hand;
+}
+
+.glyph-icon:hover {
+    -fx-fill: -colore-primario;
+}
+
+.scroll-pane, .scroll-pane .viewport, .scroll-pane .viewport .content {
+    -fx-background-color: transparent;
+}
+
+.table-view {
+    -fx-background-color: transparent;
+}
+
+.table-view .column-header-background, .table-view .column-header, .table-view .filler {
+    -fx-background-color: transparent;
+    -fx-border-color: -colore-secondario;
+    -fx-border-width: 0 0 1 0;
+}
+
+.table-view .column-header .label {
+    -fx-text-fill: -colore-secondario;
+    -fx-font-weight: bold;
+}
+
+.table-view .table-row-cell, .table-view .table-row-cell:empty {
+   -fx-background-color:transparent;
+}
+
+.slider .track {
+    -fx-background-color: -colore-secondario;
+    -fx-pref-height: 4px;
+    -fx-background-radius: 5px;
+}
+
+.slider .thumb {
+    -fx-background-color: -colore-primario;
+    -fx-pref-width: 12px;
+    -fx-pref-height: 12px;
+}
+
+.slider .thumb:hover{
+    -fx-background-color: -colore-testo;
+    -fx-cursor: hand;
+}
+
+.scroll-bar:horizontal, .scroll-bar:vertical {
+    -fx-background-color: transparent;
+}
+
+.scroll-bar:horizontal .track, .scroll-bar:vertical .track{
+    -fx-background-color: transparent;
+    -fx-border-color:transparent;
+    -fx-background-radius: 0;
+}
+
+.scroll-bar:horizontal .thumb, .scroll-bar:vertical .thumb{
+    -fx-background-color: -colore-secondario;
+    -fx-background-radius: 10px;
+}
+
+.scroll-bar:horizontal .thumb:hover, .scroll-bar:vertical .thumb:hover {
+    -fx-background-color: -colore-primario;
+}
+
+.scroll-bar .increment-button, .scroll-bar .decrement-button{
+    -fx-background-color: transparent;
+    -fx-padding: 0;
+}
+
+.scroll-bar .increment-arrow, .scroll-bar .decrement-arrow{
+    -fx-shape: "";
+    -fx-padding: 0;
+}
+
+.logo-app {
+    -fx-text-fill: #F2C300;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-font-style: italic;
+}

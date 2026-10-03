@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="530.0" prefWidth="940.0" styleClass="root-pane" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1">
+
+   
+    <left>
+        <VBox prefHeight="635.0" prefWidth="186.0" styleClass="sidebar">
+            <padding>
+                <Insets bottom="20" left="16" right="16" top="20" />
+            </padding>
+            <children>
+                <Label styleClass="app-logo" stylesheets="@style.css" text="UnivaqSound" textFill="#f2c300">
+               <font>
+                  <Font name="System Italic" size="12.0" />
+               </font></Label>
+
+                <Separator styleClass="sidebar-separator" />
+
+                <VBox spacing="8.0">
+                    <children>
+                        <Button maxWidth="1.7976931348623157E308" styleClass="side-button" text="⌂  Libreria" />
+                        <Button maxWidth="1.7976931348623157E308" styleClass="side-button-active" text="≡  Playlist" />
+                        <Button maxWidth="1.7976931348623157E308" styleClass="side-button" text="⌕  Cerca" />
+                        <Button maxWidth="1.7976931348623157E308" styleClass="side-button" text="◫  Statistiche" />
+                    </children>
+                </VBox>
+
+                <Separator styleClass="sidebar-separator" />
+
+                <Label styleClass="sidebar-title" text="Le tue playlist" />
+
+                <ListView prefHeight="260.0" styleClass="playlist-list" />
+
+                <Region VBox.vgrow="ALWAYS" />
+
+                <Button maxWidth="1.7976931348623157E308" styleClass="upgrade-button" />
+            </children>
+         <stylesheets>
+            <URL value="@style.css" />
+            <URL value="@tema_scuro.css" />
+         </stylesheets>
+        </VBox>
+    </left>
+
+  
+    <center>
+        <BorderPane styleClass="main-content">
+
+            
+            <top>
+                <HBox alignment="CENTER_LEFT" spacing="12.0" styleClass="top-search-bar">
+                    <padding>
+                        <Insets bottom="16" left="20" right="20" top="16" />
+                    </padding>
+                    <children>
+                        <TextField prefWidth="360.0" promptText="Search tracks, artists, albums..." styleClass="search-box" />
+                        <Region HBox.hgrow="ALWAYS" />
+                        <ToggleButton styleClass="theme-toggle" text="☀/🌙" />
+                        <Button styleClass="icon-button" text="🔔" />
+                        <Button styleClass="icon-button" text="👤" />
+                    </children>
+                </HBox>
+            </top>
+
+            
+            <center>
+                <VBox spacing="22.0" styleClass="content-wrapper">
+                    <padding>
+                        <Insets bottom="18" left="24" right="24" top="22" />
+                    </padding>
+                    <children>
+
+                        
+                        <HBox alignment="CENTER_LEFT" spacing="24.0" styleClass="hero-section">
+                            <children>
+                                <StackPane prefHeight="170.0" prefWidth="170.0" styleClass="cover-card">
+                                    <children>
+                                        <ImageView fitHeight="130.0" fitWidth="130.0" preserveRatio="true" />
+                                    </children>
+                                </StackPane>
+
+                                <VBox spacing="10.0">
+                                    <children>
+                                        <Label styleClass="hero-kicker" text="Custom Playlist" />
+                                        <Label styleClass="hero-title" text="Evening Chill" />
+                                        <Label styleClass="hero-description" text="Perfetta per rilassarti dopo il lavoro. Una selezione curata di brani downtempo, lo-fi e ambient." wrapText="true" />
+                                        <HBox spacing="16.0">
+                                            <children>
+                                                <Label styleClass="hero-meta" text="By UnivaqSound" />
+                                                <Label styleClass="hero-meta" text="• 24 brani, 2h 15m" />
+                                            </children>
+                                        </HBox>
+                                    </children>
+                                </VBox>
+                            </children>
+                        </HBox>
+
+                      
+                        <HBox alignment="CENTER_LEFT" spacing="12.0">
+                            <children>
+                                <Button styleClass="play-main-button" text="▶ Play" />
+                                <Button styleClass="round-button" text="♡" />
+                                <Button styleClass="secondary-button" text="+ Add Track" />
+                                <Button styleClass="danger-button" text="🗑 Delete Playlist" />
+                            </children>
+                        </HBox>
+
+                        
+                        <HBox alignment="CENTER_LEFT">
+                            <children>
+                                <Label styleClass="table-title" text="Brani della playlist" />
+                            </children>
+                        </HBox>
+
+                        <TableView prefHeight="380.0" styleClass="modern-table">
+                            <columns>
+                                <TableColumn prefWidth="50.0" text="#" />
+                                <TableColumn prefWidth="300.0" text="Track" />
+                                <TableColumn prefWidth="180.0" text="Album" />
+                                <TableColumn prefWidth="140.0" text="Data aggiunta" />
+                                <TableColumn prefWidth="90.0" text="Durata" />
+                                <TableColumn prefWidth="120.0" text="Riordina" />
+                                <TableColumn prefWidth="90.0" text="Azioni" />
+                            </columns>
+                        </TableView>
+
+                    </children>
+                </VBox>
+            </center>
+        </BorderPane>
+    </center>
+
+    <!-- PLAYER -->
+    <bottom>
+        <HBox alignment="CENTER_LEFT" spacing="18.0" styleClass="bottom-player">
+            <padding>
+                <Insets bottom="12" left="18" right="18" top="12" />
+            </padding>
+            <children>
+
+               
+                <HBox alignment="CENTER_LEFT" spacing="10.0">
+                    <children>
+                        <ImageView fitHeight="50.0" fitWidth="50.0" preserveRatio="true" />
+                        <VBox spacing="2.0">
+                            <children>
+                                <Label styleClass="player-song" text="Midnight Cityscape" />
+                                <Label styleClass="player-artist" text="Neo-Soul Project" />
+                            </children>
+                        </VBox>
+                        <Button styleClass="icon-button" text="♡" />
+                    </children>
+                </HBox>
+
+                <Region HBox.hgrow="ALWAYS" />
+
+              
+                <VBox alignment="CENTER" spacing="6.0">
+                    <children>
+                        <HBox alignment="CENTER" spacing="12.0">
+                            <children>
+                                <Button styleClass="player-control" text="⤮" />
+                                <Button styleClass="player-control" text="⏮" />
+                                <Button styleClass="player-play" text="▶" />
+                                <Button styleClass="player-control" text="⏭" />
+                                <Button styleClass="player-control" text="↻" />
+                            </children>
+                        </HBox>
+                        <HBox alignment="CENTER" spacing="8.0">
+                            <children>
+                                <Label styleClass="player-time" text="1:45" />
+                                <Slider prefWidth="240.0" />
+                                <Label styleClass="player-time" text="4:12" />
+                            </children>
+                        </HBox>
+                    </children>
+                </VBox>
+
+                <Region HBox.hgrow="ALWAYS" />
+
+                
+                <HBox alignment="CENTER_RIGHT" spacing="10.0">
+                    <children>
+                        <Button styleClass="player-control" text="≣" />
+                        <Button styleClass="player-control" text="🔊" />
+                        <Slider prefWidth="100.0" />
+                        <Button styleClass="player-control" text="⛶" />
+                    </children>
+                </HBox>
+
+            </children>
+        </HBox>
+    </bottom>
+   <stylesheets>
+      <URL value="@style.css" />
+      <URL value="@tema_scuro.css" />
+   </stylesheets>
+
+</BorderPane>

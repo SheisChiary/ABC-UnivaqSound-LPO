@@ -149,7 +149,7 @@
         </BorderPane>
     </center>
 
-    <!-- PLAYER -->
+  
     <bottom>
         <HBox alignment="CENTER_LEFT" spacing="18.0" styleClass="bottom-player">
             <padding>

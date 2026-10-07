@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane prefHeight="590.0" prefWidth="1063.0" styleClass="root-pane" stylesheets="@../../../../../../../../Downloads/modern-dark.css" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1">
+
+  
+    <left>
+        <VBox prefWidth="240.0" styleClass="sidebar">
+            <padding>
+                <Insets bottom="20" left="16" right="16" top="20" />
+            </padding>
+            <children>
+                <Label styleClass="app-logo" text="UnivaqSound" />
+                <Label styleClass="app-subtitle" />
+
+                <Separator styleClass="sidebar-separator" />
+
+                <VBox spacing="8.0">
+                    <children>
+                        <Button maxWidth="1.7976931348623157E308" styleClass="side-button" text="⌂  Libreria" />
+                        <Button maxWidth="1.7976931348623157E308" styleClass="side-button" text="≡  Playlist" />
+                        <Button maxWidth="1.7976931348623157E308" styleClass="side-button-active" text="⌕  Ricerca" />
+                        <Button maxWidth="1.7976931348623157E308" styleClass="side-button" text="◫  Statistiche" />
+                    </children>
+                </VBox>
+
+                <Separator styleClass="sidebar-separator" />
+
+                <Region VBox.vgrow="ALWAYS" />
+            </children>
+        </VBox>
+    </left>
+
+  
+    <center>
+        <BorderPane styleClass="main-content">
+
+            
+            <top>
+                <HBox alignment="CENTER_LEFT" spacing="12.0" styleClass="top-search-bar">
+                    <padding>
+                        <Insets bottom="16" left="20" right="20" top="16" />
+                    </padding>
+                    <children>
+                        <TextField prefWidth="550.0" promptText="Cerca canzoni, artisti, podcast" styleClass="search-box-main" />
+                        <Region HBox.hgrow="ALWAYS" />
+                        <Button styleClass="icon-button" text="🔔" />
+                        <Button styleClass="icon-button" text="👤" />
+                    </children>
+                </HBox>
+            </top>
+
+           
+            <center>
+                <ScrollPane fitToWidth="true" styleClass="center-scroll">
+                    <content>
+                        <VBox spacing="24.0" styleClass="content-wrapper">
+                            <padding>
+                                <Insets bottom="24" left="28" right="28" top="24" />
+                            </padding>
+                            <children>
+
+                                
+                                <VBox spacing="14.0">
+                                    <children>
+                                        <HBox alignment="CENTER_LEFT" spacing="12.0">
+                                            <children>
+                                                <Label styleClass="filter-section-title" text="Genere" />
+                                                <Separator HBox.hgrow="ALWAYS" />
+                                            </children>
+                                        </HBox>
+
+                                        <FlowPane hgap="10.0" prefWrapLength="800.0" vgap="10.0">
+                                            <children>
+                                                <Button styleClass="genre-chip-active" text="Rock" />
+                                                <Button styleClass="genre-chip" text="Pop" />
+                                                <Button styleClass="genre-chip" text="Jazz" />
+                                                <Button styleClass="genre-chip" text="Classical" />
+                                                <Button styleClass="genre-chip" text="Hip-Hop" />
+                                                <Button styleClass="genre-chip" text="Electronic" />
+                                                <Button styleClass="genre-chip" text="R&amp;B" />
+                                                <Button styleClass="genre-chip" text="Indie" />
+                                                <Button styleClass="genre-chip" text="Country" />
+                                                <Button styleClass="genre-chip" text="Latin" />
+                                                <Button styleClass="genre-chip" text="Soul" />
+                                                <Button styleClass="genre-chip" text="Reggae" />
+                                            </children>
+                                        </FlowPane>
+                                    </children>
+                                </VBox>
+
+                                
+                                <VBox spacing="14.0">
+                                    <children>
+                                        <HBox alignment="CENTER_LEFT" spacing="12.0">
+                                            <children>
+                                                <Label styleClass="filter-section-title" text="Ricerca avanzata" />
+                                                <Separator HBox.hgrow="ALWAYS" />
+                                            </children>
+                                        </HBox>
+
+                                        <HBox alignment="TOP_LEFT" spacing="28.0">
+                                            <children>
+
+                                                
+                                                <VBox minWidth="280.0" spacing="10.0">
+                                                    <children>
+                                                        <Label styleClass="filter-label" text="Data di rilascio" />
+                                                        <HBox alignment="CENTER_LEFT" spacing="12.0">
+                                                            <children>
+                                                                <Label styleClass="year-label" text="2000" />
+                                                                <Slider max="2024" min="2000" prefWidth="180.0" value="2012" />
+                                                                <Label styleClass="year-label" text="2024" />
+                                                            </children>
+                                                        </HBox>
+                                                    </children>
+                                                </VBox>
+
+                                               
+                                                <VBox minWidth="220.0" spacing="10.0">
+                                                    <children>
+                                                        <Label styleClass="filter-label" text="Durata" />
+                                                        <ComboBox prefWidth="210.0" promptText="All Lengths" styleClass="filter-combo" />
+                                                    </children>
+                                                </VBox>
+
+                                               
+                                                <VBox minWidth="220.0" spacing="10.0">
+                                                    <children>
+                                                        <Label styleClass="filter-label" text="Ordina per" />
+                                                        <ComboBox prefWidth="210.0" promptText="Popolarità" styleClass="filter-combo" />
+                                                    </children>
+                                                </VBox>
+
+                                            </children>
+                                        </HBox>
+                                    </children>
+                                </VBox>
+
+                                
+                                <HBox alignment="CENTER_RIGHT" spacing="12.0">
+                                    <children>
+                                        <Button styleClass="secondary-button" text="Reset" />
+                                        <Button styleClass="apply-button" text="Applica filtri" />
+                                    </children>
+                                </HBox>
+
+                              
+                                <HBox alignment="CENTER_LEFT" spacing="16.0">
+                                    <children>
+                                        <Label styleClass="results-section-title" text="Risultati" />
+                                        <Label styleClass="results-count" text="(1,240 tracks)" />
+                                        <Region HBox.hgrow="ALWAYS" />
+                                        <Button styleClass="view-toggle" text="☷ Lista" />
+                                        <Button styleClass="view-toggle" text="⊞ Griglia" />
+                                    </children>
+                                </HBox>
+
+                            
+                                <TableView prefHeight="400.0" styleClass="modern-table">
+                                    <columns>
+                                        <TableColumn prefWidth="50.0" text="#" />
+                                        <TableColumn prefWidth="300.0" text="TITOLO" />
+                                        <TableColumn prefWidth="160.0" text="ARTISTA" />
+                                        <TableColumn prefWidth="140.0" text="ALBUM" />
+                                        <TableColumn prefWidth="100.0" text="ANNO" />
+                                        <TableColumn prefWidth="80.0" text="⏱" />
+                                        <TableColumn prefWidth="110.0" text="ACTIONS" />
+                                    </columns>
+                                </TableView>
+
+                            </children>
+                        </VBox>
+                    </content>
+                </ScrollPane>
+            </center>
+        </BorderPane>
+    </center>
+
+   
+    <bottom>
+        <HBox alignment="CENTER_LEFT" spacing="18.0" styleClass="bottom-player">
+            <padding>
+                <Insets bottom="12" left="18" right="18" top="12" />
+            </padding>
+            <children>
+
+                
+                <HBox alignment="CENTER_LEFT" minWidth="240.0" spacing="12.0">
+                    <children>
+                        <Label styleClass="player-icon" text="🎵" />
+                        <VBox spacing="2.0">
+                            <children>
+                                <Label styleClass="player-song" text="Canzone" />
+                                <Label styleClass="player-artist" text="Artista" />
+                            </children>
+                        </VBox>
+                    </children>
+                </HBox>
+
+                <Region HBox.hgrow="ALWAYS" />
+
+                
+                <VBox alignment="CENTER" spacing="6.0">
+                    <children>
+                        <HBox alignment="CENTER" spacing="12.0">
+                            <children>
+                                <Button styleClass="player-control" text="⤮" />
+                                <Button styleClass="player-control" text="⏮" />
+                                <Button styleClass="player-play" text="▶" />
+                                <Button styleClass="player-control" text="⏭" />
+                                <Button styleClass="player-control" text="↻" />
+                            </children>
+                        </HBox>
+                        <HBox alignment="CENTER" spacing="8.0">
+                            <children>
+                                <Label styleClass="player-time" text="1:42" />
+                                <Slider prefWidth="240.0" />
+                                <Label styleClass="player-time" text="4:22" />
+                            </children>
+                        </HBox>
+                    </children>
+                </VBox>
+
+                <Region HBox.hgrow="ALWAYS" />
+
+              
+                <HBox alignment="CENTER_RIGHT" spacing="10.0">
+                    <children>
+                        <Button styleClass="player-control" text="🔊" />
+                        <Slider prefWidth="100.0" />
+                    </children>
+                </HBox>
+
+            </children>
+        </HBox>
+    </bottom>
+
+</BorderPane>

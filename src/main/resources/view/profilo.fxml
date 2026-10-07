@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1">
+   <left>
+      <VBox prefHeight="400.0" prefWidth="121.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" prefHeight="45.0" prefWidth="122.0" text="UnivaqSound">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <font>
+                  <Font name="Arial Bold" size="15.0" />
+               </font>
+            </Label>
+            <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="134.0" text="Libreria">
+               <graphic>
+                  <FontAwesomeIconView glyphName="MUSIC" />
+               </graphic>
+            </Button>
+            <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="131.0" text="Playlist">
+               <graphic>
+                  <FontAwesomeIconView glyphName="LIST_UL" />
+               </graphic>
+            </Button>
+            <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="135.0" text="Esplora">
+               <graphic>
+                  <FontAwesomeIconView glyphName="COMPASS" />
+               </graphic>
+            </Button>
+            <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="134.0" text="Statistiche">
+               <graphic>
+                  <FontAwesomeIconView glyphName="BAR_CHART" />
+               </graphic>
+            </Button>
+         </children>
+      </VBox>
+   </left>
+   <bottom>
+      <HBox prefHeight="45.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="TOP_CENTER" prefHeight="43.0" prefWidth="153.0">
+               <children>
+                  <ImageView fitHeight="38.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../Downloads/Midnights_-_Taylor_Swift.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets left="5.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <VBox prefHeight="46.0" prefWidth="114.0">
+                     <children>
+                        <HBox prefHeight="18.0" prefWidth="100.0">
+                           <children>
+                              <Label prefHeight="17.0" prefWidth="82.0" text="Midnight Rain">
+                                 <font>
+                                    <Font size="13.0" />
+                                 </font>
+                              </Label>
+                              <FontAwesomeIconView glyphName="HEART">
+                                 <HBox.margin>
+                                    <Insets left="2.0" top="5.0" />
+                                 </HBox.margin>
+                              </FontAwesomeIconView>
+                           </children>
+                        </HBox>
+                        <Label alignment="TOP_LEFT" text="Taylor Swift">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <HBox.margin>
+                        <Insets left="2.0" />
+                     </HBox.margin>
+                  </VBox>
+               </children>
+            </HBox>
+            <VBox alignment="CENTER" prefHeight="46.0" prefWidth="296.0">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="24.0" prefWidth="275.0">
+                     <children>
+                        <FontAwesomeIconView glyphName="RANDOM" text="">
+                           <HBox.margin>
+                              <Insets right="5.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </FontAwesomeIconView>
+                        <FontAwesomeIconView glyphName="STEP_BACKWARD">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </FontAwesomeIconView>
+                        <FontAwesomeIconView glyphName="PLAY" text="">
+                           <HBox.margin>
+                              <Insets left="5.0" right="5.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </FontAwesomeIconView>
+                        <FontAwesomeIconView glyphName="STEP_FORWARD" text="">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </FontAwesomeIconView>
+                        <FontAwesomeIconView glyphName="REPEAT">
+                           <HBox.margin>
+                              <Insets left="5.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </FontAwesomeIconView>
+                     </children>
+                  </HBox>
+                  <HBox alignment="TOP_CENTER" prefHeight="23.0" prefWidth="315.0">
+                     <children>
+                        <Label text="1:00" />
+                        <Slider prefHeight="14.0" prefWidth="206.0" />
+                        <Label text="-1:53" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <HBox alignment="CENTER" prefHeight="46.0" prefWidth="149.0">
+               <children>
+                  <FontAwesomeIconView glyphName="BARS">
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin>
+                  </FontAwesomeIconView>
+                  <FontAwesomeIconView glyphName="VOLUME_UP">
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                  </FontAwesomeIconView>
+                  <Slider prefHeight="14.0" prefWidth="62.0" />
+                  <FontAwesomeIconView glyphName="EXPAND">
+                     <HBox.margin>
+                        <Insets left="5.0" />
+                     </HBox.margin>
+                  </FontAwesomeIconView>
+               </children>
+            </HBox>
+         </children>
+      </HBox>
+   </bottom>
+   <center>
+      <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="42.0" prefWidth="478.0">
+               <children>
+                  <FontAwesomeIconView glyphName="SEARCH">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </FontAwesomeIconView>
+                  <TextField promptText="Cerca brani, artisti...">
+                     <HBox.margin>
+                        <Insets left="2.0" />
+                     </HBox.margin>
+                  </TextField>
+                  <Region prefHeight="42.0" prefWidth="22.0" HBox.hgrow="ALWAYS" />
+                  <FontAwesomeIconView glyphName="BELL">
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin>
+                  </FontAwesomeIconView>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin>
+                     <image>
+                        <Image url="@../../../../../Downloads/Midnights_-_Taylor_Swift.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+            <Label text="Il tuo profilo">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="5.0" />
+               </VBox.margin>
+            </Label>
+            <HBox prefHeight="126.0" prefWidth="478.0">
+               <children>
+                  <ImageView fitHeight="120.0" fitWidth="120.0" pickOnBounds="true" preserveRatio="true">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                     <image>
+                        <Image url="@../../../../../Pictures/Screenshots/Screenshot%202025-12-11%20133028.png" />
+                     </image>
+                  </ImageView>
+                  <VBox prefHeight="129.0" prefWidth="397.0">
+                     <children>
+                        <Label prefHeight="36.0" prefWidth="94.0" text="Maikol">
+                           <font>
+                              <Font name="System Bold" size="22.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="10.0" />
+                           </VBox.margin>
+                        </Label>
+                        <HBox prefHeight="33.0" prefWidth="349.0">
+                           <children>
+                              <Label alignment="CENTER" prefHeight="34.0" prefWidth="86.0" text="33 seguiti ">
+                                 <font>
+                                    <Font name="System Italic" size="13.0" />
+                                 </font>
+                              </Label>
+                              <Label prefHeight="38.0" prefWidth="104.0" text="15 playlist">
+                                 <HBox.margin>
+                                    <Insets left="20.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font name="System Italic" size="13.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="30.0" prefWidth="45.0">
+                           <VBox.margin>
+                              <Insets left="10.0" />
+                           </VBox.margin>
+                           <children>
+                              <FontAwesomeIconView glyphName="GEAR" size="16">
+                                 <HBox.margin>
+                                    <Insets left="5.0" />
+                                 </HBox.margin>
+                              </FontAwesomeIconView>
+                              <FontAwesomeIconView glyphName="ELLIPSIS_H" size="16">
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </FontAwesomeIconView>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <Label text="Playlist pubbliche">
+               <VBox.margin>
+                  <Insets left="5.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <HBox prefHeight="144.0" prefWidth="478.0">
+               <children>
+                  <VBox prefHeight="144.0" prefWidth="127.0">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                     <children>
+                        <ImageView fitHeight="90.0" fitWidth="90.0" pickOnBounds="true" preserveRatio="true">
+                           <VBox.margin>
+                              <Insets left="15.0" top="13.0" />
+                           </VBox.margin>
+                           <image>
+                              <Image url="@../../../../../Downloads/Taylor_Swift_-_Reputation.png" />
+                           </image>
+                        </ImageView>
+                        <Label alignment="CENTER" prefHeight="18.0" prefWidth="139.0" text="Reputation">
+                           <VBox.margin>
+                              <Insets top="5.0" />
+                           </VBox.margin>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="144.0" prefWidth="127.0">
+                     <children>
+                        <ImageView fitHeight="90.0" fitWidth="90.0" pickOnBounds="true" preserveRatio="true">
+                           <VBox.margin>
+                              <Insets left="15.0" top="13.0" />
+                           </VBox.margin>
+                           <image>
+                              <Image url="@../../../../../Downloads/Taylor_Swift_-_Reputation.png" />
+                           </image>
+                        </ImageView>
+                        <Label alignment="CENTER" prefHeight="18.0" prefWidth="139.0" text="Reputation">
+                           <VBox.margin>
+                              <Insets top="5.0" />
+                           </VBox.margin>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="144.0" prefWidth="127.0">
+                     <children>
+                        <ImageView fitHeight="90.0" fitWidth="90.0" pickOnBounds="true" preserveRatio="true">
+                           <VBox.margin>
+                              <Insets left="15.0" top="13.0" />
+                           </VBox.margin>
+                           <image>
+                              <Image url="@../../../../../Downloads/Taylor_Swift_-_Reputation.png" />
+                           </image>
+                        </ImageView>
+                        <Label alignment="CENTER" prefHeight="18.0" prefWidth="139.0" text="Reputation">
+                           <VBox.margin>
+                              <Insets top="5.0" />
+                           </VBox.margin>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="144.0" prefWidth="127.0">
+                     <children>
+                        <ImageView fitHeight="90.0" fitWidth="90.0" pickOnBounds="true" preserveRatio="true">
+                           <VBox.margin>
+                              <Insets left="15.0" top="13.0" />
+                           </VBox.margin>
+                           <image>
+                              <Image url="@../../../../../Downloads/Taylor_Swift_-_Reputation.png" />
+                           </image>
+                        </ImageView>
+                        <Label alignment="CENTER" prefHeight="18.0" prefWidth="139.0" text="Reputation">
+                           <VBox.margin>
+                              <Insets top="5.0" />
+                           </VBox.margin>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>
